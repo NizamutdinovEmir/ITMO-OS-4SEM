@@ -1,6 +1,6 @@
 #!/bin/bash
 
-> report.log
+> report2.log
 
 array=()
 counter=0
@@ -10,6 +10,6 @@ while true; do
     ((counter++))
 
     if ((counter % 100000 == 0)); then
-        echo "Size of the array: ${#array[@]}" >> report.log
+        echo "Size of the array: ${#array[@]}" >> report2.log
     fi
 done
